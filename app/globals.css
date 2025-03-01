@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 50% 98%;
+    --foreground: 220 15% 20%;
+    --card: 210 50% 98%;
+    --card-foreground: 220 15% 20%;
+    --popover: 210 50% 98%;
+    --popover-foreground: 220 15% 20%;
+    --primary: 222 90% 56%;
+    --primary-foreground: 210 50% 98%;
+    --secondary: 160 60% 40%;
+    --secondary-foreground: 210 50% 98%;
+    --muted: 210 15% 85%;
+    --muted-foreground: 220 10% 40%;
+    --accent: 197 80% 55%;
+    --accent-foreground: 210 50% 98%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 210 50% 98%;
+    --border: 220 15% 70%;
+    --input: 220 15% 70%;
+    --ring: 222 90% 56%;
+    --radius: 0.5rem;
+    --chart-1: 197 80% 55%;
+    --chart-2: 160 60% 40%;
+    --chart-3: 43 80% 65%;
+    --chart-4: 27 90% 70%;
+    --chart-5: 0 85% 60%;
+  }
+
+  .dark {
+    --background: 220 15% 10%;
+    --foreground: 210 50% 98%;
+    --card: 220 15% 12%;
+    --card-foreground: 210 50% 98%;
+    --popover: 220 15% 12%;
+    --popover-foreground: 210 50% 98%;
+    --primary: 222 90% 66%;
+    --primary-foreground: 220 15% 10%;
+    --secondary: 160 70% 50%;
+    --secondary-foreground: 220 15% 10%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 10% 60%;
+    --accent: 197 80% 65%;
+    --accent-foreground: 220 15% 10%;
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 210 50% 98%;
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 222 90% 66%;
+    --chart-1: 220 80% 60%;
+    --chart-2: 160 70% 50%;
+    --chart-3: 43 85% 70%;
+    --chart-4: 27 90% 75%;
+    --chart-5: 0 85% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer base {
+  pre {
+    @apply bg-gray-300 text-gray-800 p-4 rounded-lg overflow-x-auto;
+  }
+  
+  code {
+    @apply bg-gray-300 text-green-800 px-1 py-0.5 rounded;
+  }
+
+  pre code {
+    @apply bg-transparent text-gray-800 p-0 rounded-none;
+  }
+}
+
+@layer base {
+  ol {
+    @apply list-decimal list-inside space-y-2;
+  }
+  ul {
+    @apply list-disc list-inside space-y-2;
+  }
+  li {
+    @apply text-base leading-relaxed;
+  }
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@keyframes scroll-right {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 10s linear infinite;
+  display: flex;
+  white-space: nowrap;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 10s linear infinite;
+  display: flex;
+  white-space: nowrap;
+}
