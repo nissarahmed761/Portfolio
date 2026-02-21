@@ -37,9 +37,6 @@ export default function Navbar() {
           <Link href="/projects" className={`hover:text-primary ${pathname === '/projects' ? 'text-primary' : ''}`}>
             Projects
           </Link>
-          {/* <Link href="/blogs" className={`hover:text-primary ${pathname === '/blogs' ? 'text-primary' : ''}`}>
-            Blogs
-          </Link> */}
           <Button
             variant="ghost"
             size="icon"

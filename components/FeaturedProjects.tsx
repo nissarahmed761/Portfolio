@@ -1,21 +1,5 @@
 'use client'
 const projects = [
-  {
-    title: "DeepFind.Me",
-    image: "/dfme.webp",
-    description: "Deepfind.me is an educational OSINT platform offering tools and resources to help users understand and manage their digital footprint.",
-    github: null,
-    demo: "https://deepfind.me?ref=buddhsen-tripathi",
-    technologies: ["Next.Js", "NestJs", "TypeScript", "Supabase", "AWS", "OpenAI API"],
-  },
-  {
-    title: "openai-api-helper",
-    image: "/openai-helper.webp",
-    description: "Straightforward npm package designed to simplify making calls to the OpenAI API for various text-based prompts and responses.",
-    github: "https://github.com/Buddhsen-tripathi/openai-api-helper",
-    demo: "https://www.npmjs.com/package/openai-api-helper",
-    technologies: ["JavaScript", "TypeScript"],
-  }
 ];
 
 import Image from 'next/image'
@@ -79,4 +63,4 @@ export default function FeaturedProjects() {
       )}
     </section>
   )
-}
+}1

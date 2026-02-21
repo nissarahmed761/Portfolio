@@ -1,4 +1,3 @@
-import FeaturedProjects from '@/components/FeaturedProjects'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 
@@ -14,8 +13,13 @@ export default function ProjectsPage() {
         <ArrowLeft className="w-4 h-4 mr-2" />
         Back to Home
       </Link>
-      <FeaturedProjects />
-      {/* Add more projects here if needed */}
+      <div className="text-center py-12">
+        <h1 className="text-3xl font-bold mb-4">Projects</h1>
+        <p className="text-muted-foreground">No projects to display at the moment.</p>
+      </div>
+
+     
+      
     </div>
   )
 }
