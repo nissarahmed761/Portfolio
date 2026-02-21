@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="flex flex-col items-center md:items-start space-y-4">
         <h1 className="text-4xl font-bold">Abdul Naeem</h1>
         <p className="max-w-2xl text-center md:text-left text-muted-foreground">
-          Hello! I'm a data analyst with a strong foundation in data science, analytics, and machine learning, currently completing my <strong>MS in Data Science at Stevens Institute of Technology</strong>.
+          Hello! I'm a data analyst with a strong foundation in data science, analytics, and machine learning, and I have completed my <strong>MS in Data Science from Stevens Institute of Technology</strong>.
           <br/>
           I specialize in data visualization, statistical analysis, and predictive modeling, using tools like Python, SQL, Tableau, and Power BI to derive insights and drive data-driven decisions. Open to full-time opportunities in data analytics, business intelligence, and data science. Find my resume <a href="/Abdul_Naeem_Resume.pdf" target="_blank" rel="noopener noreferrer" className="text-primary underline">here</a>.
         </p>
