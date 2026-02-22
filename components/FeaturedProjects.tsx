@@ -9,7 +9,15 @@ type Project = {
   technologies: string[]
 }
 
-const projects: Project[] = []
+const projects: Project[] = [
+  {
+    title: "Datasafai.com",
+    description: "AI-assisted web platform for data cleaning, filtering, and preprocessing. Features automated pipelines for deduplication, normalization, missing-value handling, and format standardization. Includes anomaly detection and transformation logic to improve data quality, with one-click export functionality for streamlined reporting.",
+    image: "/datasafai.png",
+    demo: "https://datasafai.com",
+    technologies: ["AI", "Data Processing", "Machine Learning", "Python", "Automation"]
+  }
+]
 
 import Image from 'next/image'
 import Link from 'next/link'
